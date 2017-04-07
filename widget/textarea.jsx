@@ -1,0 +1,19 @@
+'use strict';
+
+import React, { Component } from 'react';
+
+/**
+{%- block textarea_widget -%}
+    <textarea {{ block('widget_attributes') }}>{{ value }}</textarea>
+{%- endblock textarea_widget -%}
+ */
+
+import WidgetAttributes from '@components/form/attributes/widget';
+
+export default class Textarea extends Component {
+    render() {
+        return <textarea {...WidgetAttributes(this.props)}>
+            {this.props.vars.value}
+        </textarea>
+    }
+}

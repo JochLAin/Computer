@@ -1,0 +1,26 @@
+{
+  "name": "computer",
+  "version": "1.0.0",
+  "description": "React Theme for Symfony FormView",
+  "main": "index.jsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JochLAin/Computer.git"
+  },
+  "keywords": [
+    "react",
+    "symfony",
+    "form",
+    "view",
+    "wow"
+  ],
+  "author": "Jocelyn Faihy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JochLAin/Computer/issues"
+  },
+  "homepage": "https://github.com/JochLAin/Computer#readme"
+}
