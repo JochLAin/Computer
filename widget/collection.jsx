@@ -16,7 +16,7 @@ import Widget from '@components/form/widget';
 
 export default class Collection extends Component {
     render() {
-        return <Widget {...set.call(this, {
+        return <Widget {...set.call(this.props, {
             'data-prototype': this.props.vars.prototype
         })} />
     }

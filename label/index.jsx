@@ -46,8 +46,7 @@ export default class Label extends Component {
                 else label = name;
         }
 
-        console.log(set.call(this, label_attr));
-        return <label {...Attributes.call(set.call(this, label_attr))}>
+        return <label {...Attributes.call(set.call(this.props, label_attr))}>
             {label}
         </label>
     }

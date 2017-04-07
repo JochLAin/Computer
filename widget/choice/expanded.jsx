@@ -1,5 +1,6 @@
 'use strict';
 
+import uuid from 'uuid';
 import React, { Component } from 'react';
 
 /**
@@ -19,15 +20,12 @@ import Widget from '@components/form/widget';
 
 export default class Expanded extends Component {
     render() {
-        return <div {...ContainerAttributes.call(this)}>
+        return <div {...ContainerAttributes.call(this.props)}>
             { Object.keys(this.props.children).map((key, index, keys) => {
-                return <div>
+                return <div key={uuid.v4()}>
                     <Widget {...this.props.children[key]}/>
-                    <Label {...Object.assign({}, this.props.children[key], {
-                        vars: Object.assign({}, this.props.children[key].vars, {
-                            translation_domain: this.props.children[key].vars.choice_translation_domain
-                        })
-                    })}/>
+                    {/* TODO: Traduction avec StoneJS */}
+                    <Label {...this.props.children[key]}/>
                 </div>
             })}
         </div>

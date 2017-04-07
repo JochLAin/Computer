@@ -12,6 +12,6 @@ import WidgetAttributes from '@components/form/attributes';
 
 export default class Checkbox extends Component {
     render() {
-        return <input type="checkbox" {...WidgetAttributes.call(this)} value={value} checked={checked} />
+        return <input type="checkbox" {...WidgetAttributes.call(this.props)} value={this.props.vars.value} defaultChecked={this.props.vars.checked} />
     }
 }

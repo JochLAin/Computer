@@ -8,10 +8,13 @@ import React, { Component } from 'react';
 {%- endblock money_widget -%}
  */
 
-import Simple from '@components/form/widget/simple';
+import Input from '@components/form/widget/input';
 
 export default class Money extends Component {
     render() {
-        return <Simple {...this.props.children.widget} />
+        return <span>
+            {this.props.vars.money_pattern.replace('{{ widget }}', '')}
+            <Input {...this.props} />
+        </span>
     }
 }

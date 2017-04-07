@@ -12,7 +12,7 @@ import React, { Component } from 'react';
 {%- endblock repeated_row -%}
  */
 
-import Rows from '@component/form/rows';
+import Rows from '@components/form/rows';
 
 export default class RepeatedRow extends Component {
     render() {

@@ -9,12 +9,12 @@ import React, { Component } from 'react';
 {%- endblock email_widget -%}
  */
 
-import { set } from '@components/form/vars';
-import Input from '@components/form/input';
+import { set } from '@components/form/variables';
+import Input from '@components/form/widget/input';
 
 export default class Email extends Component {
     render() {
-        return <Input {...set.call(this, {
+        return <Input {...set.call(this.props, {
             type: this.props.vars.type || "email"
          })} />
     }

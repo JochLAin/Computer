@@ -38,7 +38,7 @@ export default class Form extends Component {
         let form_method = 'POST';
         if(['GET', 'POST'].indexOf(method) != -1) form_method = method;
 
-        return <form method={method} action={action} {...Attributes.call(this)} encType={this.props.vars.multipart && 'multipart/form-data'}>
+        return <form method={method} action={action} {...Attributes.call(this.props)} encType={this.props.vars.multipart && 'multipart/form-data'}>
             { form_method != method && (
                 <input type="hidden" name="_method" value={method} />
             )}

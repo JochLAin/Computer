@@ -22,7 +22,7 @@ export default class Widget extends Component {
     render() {
         const { parent } = this.props.vars;
 
-        return <section {...ContainerAttributes.call(this)}>
+        return <section {...ContainerAttributes.call(this.props)}>
             { parent && <Errors {...this.props} />}
             <Rows {...this.props} />
         </section>

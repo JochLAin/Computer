@@ -34,6 +34,6 @@ export default class Button extends Component {
             if (!this.props.vars.label_format) label = name
             else label = format.call(this);
         }
-        return <button {...ButtonAttributes.call(this, {type: type || 'button'})}>{label}</button>
+        return <button {...ButtonAttributes.call(this.props,  {type: type || 'button'})}>{label}</button>
     }
 }

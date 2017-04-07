@@ -1,5 +1,6 @@
 'use strict';
 
+import uuid from 'uuid';
 import React, { Component } from 'react';
 
 /**
@@ -47,13 +48,13 @@ export default class Expanded extends Component {
         const { choices, multiple, placeholder, preferred_choices, placeholder_in_choices, separator, value } = this.props.vars;
         let { required } = this.props.vars;
         const { size } = this.props.vars.attr;
-        const _option = choice => <option value={choice.value} {...Attributes.call(this, choice)}>{choice.label}</option> 
+        const _option = choice => <option key={uuid.v4()} value={choice.value} {...Attributes.call(this.props,  choice.attr)}>{choice.label}</option> 
         const _group = choice => choice.length == undefined ? _option(choice) : 
-            <optgroup>{choice.map(preference => _option(preference))}</optgroup>
+            <optgroup key={uuid.v4()}>{choice.map(preference => _option(preference))}</optgroup>
 
         if (required && !placeholder && !placeholder_in_choices && !multiple && (!size || size <= 1)) required = false;
 
-        return <select {...WidgetAttributes.call(this)} multiple={multiple} defaultValue={value}>
+        return <select {...WidgetAttributes.call(this.props)} multiple={multiple} defaultValue={value}>
             { placeholder && (
                 <option value="">{placeholder}</option>
             )}

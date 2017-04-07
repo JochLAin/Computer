@@ -24,7 +24,7 @@ export default class Time extends Component {
     render() {
         if (widget == 'single_text') return <Input {...this.props} />
         const attr = widget == 'text' ? { size: 1 } : {};
-        return <article {...ContainerAttributes.call(this)}>
+        return <article {...ContainerAttributes.call(this.props)}>
                     <Widget {...set(this.props.children.hour, attr)} />
                     { with_minutes && <span>: <Widget {...set(this.props.children.minute, attr)} /></span> }
                     { with_seconds && <span>: <Widget {...set(this.props.children.second, attr)} /></span> }

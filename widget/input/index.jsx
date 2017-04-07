@@ -11,11 +11,10 @@ import React, { Component } from 'react';
 
 import WidgetAttributes from '@components/form/attributes/widget';
 
-export default class Widget extends Component {
+export default class Input extends Component {
     render() {
-        const { attr, block_prefixes, full_name, id, label, name, required, value } = this.props.vars;
-        const type = this.props.vars.type || block_prefixes[block_prefixes.length - 2] || 'text';
-
-        return <input ref="input" type={type} {...WidgetAttributes.call(this)} defaultValue={value} />
+        const prefixes = this.props.vars.block_prefixes;
+        const type = this.props.vars.type || prefixes[prefixes.length - 2] || 'text';
+        return <input ref="input" type={type} {...WidgetAttributes.call(this.props)} />
     }
 }

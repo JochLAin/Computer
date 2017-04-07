@@ -20,6 +20,6 @@
 import attributes from '@components/form/attributes';
 
 export default function widget_attributes(attr) {
-    const { disabled, id, full_name, required } = this.props.vars;
+    const { disabled, id, full_name, required } = this.vars;
     return Object.assign({}, { disabled, id, name: full_name, required }, attributes.call(this, attr));
 }

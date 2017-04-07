@@ -19,6 +19,6 @@
 import attributes from '@components/form/attributes';
 
 export default function button_attributes(attr) {
-    const { disabled, id, full_name } = this.props.vars;
+    const { disabled, id, full_name } = this.vars;
     return Object.assign({}, { disabled, id, name: full_name }, attributes.call(this, attr));
 }

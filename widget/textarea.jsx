@@ -12,8 +12,6 @@ import WidgetAttributes from '@components/form/attributes/widget';
 
 export default class Textarea extends Component {
     render() {
-        return <textarea {...WidgetAttributes(this.props)}>
-            {this.props.vars.value}
-        </textarea>
+        return <textarea {...WidgetAttributes.call(this.props)} />
     }
 }

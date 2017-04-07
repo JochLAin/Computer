@@ -33,7 +33,7 @@ export default class DateInterval extends Component {
     render() {
         return this.props.vars.widget == 'single_text' 
             ? <Input {...this.props} />
-            : <article {...ContainerAttributes.call(this)}>
+            : <article {...ContainerAttributes.call(this.props)}>
                 <Errors {...this.props} />
                 <table className={table_class}>
                     <thead>

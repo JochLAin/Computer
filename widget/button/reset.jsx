@@ -9,12 +9,12 @@ import React, { Component } from 'react';
 {%- endblock reset_widget -%}
  */
 
-import { set } from '@components/form/vars';
+import { set } from '@components/form/variables';
 import Button from '@components/form/widget/button';
 
 export default class Reset extends Component {
     render() {
-        return <Button {...set.call(this, {
+        return <Button {...set.call(this.props, {
             type: this.props.vars.type || "reset"
          })} />
     }

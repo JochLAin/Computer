@@ -19,6 +19,6 @@
 import attributes from '@components/form/attributes';
 
 export default function container_attributes(attr) {
-    const { id } = this.props.vars;
+    const { id } = this.vars;
     return Object.assign({}, { id }, attributes.call(this, attr));
 }

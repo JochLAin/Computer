@@ -17,8 +17,8 @@
 
 export function get() {
     let attr = {};
-    if (!this.props.vars) return attr; 
-    Object.keys(this.props.vars.attr).map((key, index, attributs) => {
+    if (!this.vars) return attr; 
+    Object.keys(this.vars.attr).map((key, index, attributs) => {
         if (["placeholder", "title"].indexOf(key) != -1) {
             // TODO: translate with StoneJS
             attr[key] = attributes[key];
@@ -37,10 +37,8 @@ export function get() {
 
 export function set(attr) {
     return Object.assign({}, this, {
-        props: Object.assign({}, this.props, {
-            vars: Object.assign({}, this.props.vars, {
-                attr: Object.assign({}, this.props.vars.attr, attr)
-            })
+        vars: Object.assign({}, this.vars, {
+            attr: Object.assign({}, this.vars.attr, attr)
         })
     });
 }

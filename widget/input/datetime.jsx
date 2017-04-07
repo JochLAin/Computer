@@ -18,14 +18,14 @@ import React, { Component } from 'react';
  */
 
 import ContainerAttributes from '@components/form/attributes/container';
-import Simple from '@components/form/widget/simple';
+import Input from '@components/form/widget/input';
 import Widget from '@components/form/widget';
 
 export default class DateTime extends Component {
     render() {
         return widget == 'single_text'
-            ? <Simple {...this.props} />
-            : <article {...ContainerAttributes.call(this)}>
+            ? <Input {...this.props} />
+            : <article {...ContainerAttributes.call(this.props)}>
                     <Errors {...this.props.children.date} />
                     <Errors {...this.props.children.time} />
                     <Widget {...this.props.children.date} />

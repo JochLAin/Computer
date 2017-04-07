@@ -26,7 +26,7 @@ export default class DateTime extends Component {
     render() {
         return widget == 'single_text'
             ? <Input {...this.props} />
-            : <article {...ContainerAttributes.call(this)}>
+            : <article {...ContainerAttributes.call(this.props)}>
                     <Widget {...this.props.children.year} />
                     <Widget {...this.props.children.month} />
                     <Widget {...this.props.children.day} />
