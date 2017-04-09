@@ -9,8 +9,8 @@ import React, { Component } from 'react';
 {%- endblock submit_widget -%}
  */
 
-import { set } from '@components/form/variables';
-import Button from '@components/form/widget/button';
+import { set } from '../../variables';
+import Button from 'index';
 
 export default class Submit extends Component {
     render() {

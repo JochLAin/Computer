@@ -8,8 +8,8 @@ import React, { Component } from 'react';
 {%- endblock url_widget -%}
  */
 
-import { set } from '@components/form/variables';
-import Input from '@components/form/widget/input';
+import { set } from '../../variables';
+import Input from 'index';
 
 export default class Url extends Component {
     render() {

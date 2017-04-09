@@ -12,33 +12,33 @@ import React, { Component } from 'react';
 {%- endblock form_widget -%}
  */
 
-import { set } from '@components/form/variables';
-import Checkbox from '@components/form/widget/checkbox';
-import Choice from '@components/form/widget/choice';
-import Collection from '@components/form/widget/collection';
-import Compound from '@components/form/widget/compound';
-import Button from '@components/form/widget/button';
-import Date from '@components/form/widget/input/date';
-import DateTime from '@components/form/widget/input/datetime';
-import DateInterval from '@components/form/widget/input/dateinterval';
-import Email from '@components/form/widget/input/email';
-import File from '@components/form/widget/file';
-import Hidden from '@components/form/widget/input/hidden';
-import Input from '@components/form/widget/input';
-import Integer from '@components/form/widget/input/integer';
-import Money from '@components/form/widget/input/money';
-import Number from '@components/form/widget/input/number';
-import Password from '@components/form/widget/input/password';
-import Percent from '@components/form/widget/input/percent';
-import Radio from '@components/form/widget/radio';
-import Range from '@components/form/widget/input/range';
-import Repeated from '@components/form/row/repeated';
-import Reset from '@components/form/widget/button/reset';
-import Search from '@components/form/widget/input/search';
-import Submit from '@components/form/widget/button/submit';
-import Textarea from '@components/form/widget/textarea';
-import Time from '@components/form/widget/input/time';
-import Url from '@components/form/widget/input/url';
+import { set } from '../variables';
+import Checkbox from './checkbox';
+import Choice from './choice';
+import Collection from './collection';
+import Compound from './compound';
+import Button from './button';
+import Date from './input/date';
+import DateTime from './input/datetime';
+import DateInterval from './input/dateinterval';
+import Email from './input/email';
+import File from './file';
+import Hidden from './input/hidden';
+import Input from './input';
+import Integer from './input/integer';
+import Money from './input/money';
+import Number from './input/number';
+import Password from './input/password';
+import Percent from './input/percent';
+import Radio from './radio';
+import Range from './input/range';
+import Repeated from '../row/repeated';
+import Reset from './button/reset';
+import Search from './input/search';
+import Submit from './button/submit';
+import Textarea from './textarea';
+import Time from './input/time';
+import Url from './input/url';
 
 export default class Widget extends Component {
     render() {

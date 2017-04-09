@@ -16,7 +16,7 @@
 {%- endblock button_attributes -%}
  */
 
-import attributes from '@components/form/attributes';
+import attributes from 'index';
 
 export default function button_attributes(attr) {
     const { disabled, id, full_name } = this.vars;

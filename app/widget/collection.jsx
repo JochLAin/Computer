@@ -11,8 +11,8 @@ import React, { Component } from 'react';
 {%- endblock collection_widget -%}
  */
 
-import { set } from '@components/form/attributes';
-import Widget from '@components/form/widget';
+import { set } from './attributes';
+import Widget from './widget';
 
 export default class Collection extends Component {
     render() {

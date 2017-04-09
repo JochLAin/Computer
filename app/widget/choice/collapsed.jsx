@@ -38,10 +38,10 @@ import React, { Component } from 'react';
 {%- endblock choice_widget_collapsed -%}
  */
 
-import Attributes from '@components/form/attributes';
-import Label from '@components/form/label';
-import WidgetAttributes from '@components/form/attributes/widget';
-import Widget from '@components/form/widget';
+import Attributes from '../../attributes';
+import Label from '../../label';
+import WidgetAttributes from '../../attributes/widget';
+import Widget from '../index';
 
 const O2A = (object) => {
     if (!object) return [];

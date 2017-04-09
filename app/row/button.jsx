@@ -10,7 +10,7 @@ import React, { Component } from 'react';
 {%- endblock button_row -%}
  */
 
-import Widget from '@components/form/widget';
+import Widget from '../widget';
 
 export default class ButtonRow extends Component {
     render() {

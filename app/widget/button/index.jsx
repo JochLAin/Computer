@@ -18,7 +18,7 @@ import React, { Component } from 'react';
 {%- endblock button_widget -%}
  */
 
-import ButtonAttributes from '@components/form/attributes/button';
+import ButtonAttributes from '../../attributes/button';
 
 export function format() {
     return this.props.vars.label_format

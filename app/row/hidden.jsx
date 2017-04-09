@@ -8,7 +8,7 @@ import React, { Component } from 'react';
 {%- endblock hidden_row -%}
  */
 
-import Widget from '@components/form/widget';
+import Widget from '../widget';
 
 export default class HiddenRow extends Component {
     render() {

@@ -11,7 +11,7 @@ import React, { Component } from 'react';
  */
 
 import uuid from 'uuid';
-import Row from '@components/form/row';
+import Row from './row';
 
 export default class Rows extends Component {
     render() {

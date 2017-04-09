@@ -8,7 +8,7 @@ import React, { Component } from 'react';
 {%- endblock textarea_widget -%}
  */
 
-import WidgetAttributes from '@components/form/attributes/widget';
+import WidgetAttributes from '../attributes/widget';
 
 export default class Textarea extends Component {
     render() {

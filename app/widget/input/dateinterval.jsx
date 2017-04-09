@@ -22,12 +22,12 @@ import React, { Component } from 'react';
 {%- endblock dateinterval_widget -%}
  */
 
-import Errors from '@components/form/errors';
-import Input from '@components/form/widget/input';
-import Label from '@components/form/label';
-import Widget from '@components/form/widget';
+import Errors from '../../errors';
+import Input from 'index';
+import Label from '../../label';
+import Widget from '../index';
 
-import ContainerAttributes from '@components/form/attributes/container';
+import ContainerAttributes from '../attributes/container';
 
 export default class DateInterval extends Component {
     render() {

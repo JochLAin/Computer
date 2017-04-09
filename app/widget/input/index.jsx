@@ -9,7 +9,7 @@ import React, { Component } from 'react';
 {%- endblock form_widget_simple -%}
  */
 
-import WidgetAttributes from '@components/form/attributes/widget';
+import WidgetAttributes from '../../attributes/widget';
 
 export default class Input extends Component {
     render() {

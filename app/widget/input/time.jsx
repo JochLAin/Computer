@@ -15,10 +15,10 @@ import React, { Component } from 'react';
 {%- endblock time_widget -%}
  */
 
-import Input from '@components/form/widget/input';
-import Widget from '@components/form/widget';
-import { set } from '@components/form/attributes';
-import ContainerAttributes from '@components/form/attributes/container';
+import Input from 'index';
+import Widget from '../index';
+import { set } from '../../attributes';
+import ContainerAttributes from '../../attributes/container';
 
 export default class Time extends Component {
     render() {

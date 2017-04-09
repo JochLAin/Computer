@@ -12,8 +12,8 @@ import React, { Component } from 'react';
 {%- endblock choice_widget -%}
  */
 
-import Expanded from '@components/form/widget/choice/expanded';
-import Collapsed from '@components/form/widget/choice/collapsed';
+import Expanded from './expanded';
+import Collapsed from './collapsed';
 
 export default class Choice extends Component {
     render() {

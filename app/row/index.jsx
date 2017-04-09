@@ -12,9 +12,9 @@ import React, { Component } from 'react';
 {%- endblock form_row -%}
  */
 
-import Errors from '@components/form/errors';
-import Label from '@components/form/label';
-import Widget from '@components/form/widget';
+import Errors from '../errors';
+import Label from '../label';
+import Widget from '../widget';
 
 export default class Row extends Component {
     render() {

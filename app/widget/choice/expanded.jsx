@@ -14,9 +14,9 @@ import React, { Component } from 'react';
 {%- endblock choice_widget_expanded -%}
  */
 
-import ContainerAttributes from '@components/form/attributes/container';
-import Label from '@components/form/label';
-import Widget from '@components/form/widget';
+import ContainerAttributes from '../../attributes/container';
+import Label from '../../label';
+import Widget from '../index';
 
 export default class Expanded extends Component {
     render() {

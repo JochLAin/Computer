@@ -26,7 +26,7 @@ import React, { Component } from 'react';
 {%- endblock form_label -%}
  */
 
-import Attributes, { set } from '@components/form/attributes';
+import Attributes, { set } from '../attributes';
 export function format() {
     this.props.vars.label_format
         .replace('%name%', this.props.vars.name)

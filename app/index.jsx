@@ -24,8 +24,8 @@ import React, { Component } from 'react';
 {%- endblock form_end -%}
  */
 
-import Attributes from '@components/form/attributes';
-import Rest from '@components/form/rest';
+import Attributes from './attributes';
+import Rest from './rest';
 
 export default class Form extends Component {
     constructor(props) {

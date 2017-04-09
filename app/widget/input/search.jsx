@@ -9,8 +9,8 @@ import React, { Component } from 'react';
 {%- endblock search_widget -%}
  */
 
-import { set } from '@components/form/variables';
-import Input from '@components/form/widget/input';
+import { set } from '../../variables';
+import Input from 'index';
 
 export default class Search extends Component {
     render() {

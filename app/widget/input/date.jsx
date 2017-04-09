@@ -18,9 +18,9 @@ import React, { Component } from 'react';
 {%- endblock date_widget -%}
  */
 
-import Input from '@components/form/widget/input';
-import Widget from '@components/form/widget';
-import ContainerAttributes from '@components/form/attributes/container';
+import Input from 'index';
+import Widget from '../index';
+import ContainerAttributes from '../../attributes/container';
 
 export default class DateTime extends Component {
     render() {
