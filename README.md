@@ -34,7 +34,7 @@ class ThisController extends Controller {
 'use strict';
 
 import React from 'react';
-import Formulaire from 'react-symfony-form-view';
+import Formulaire from 'react-symfony-formview';
 import { render } from 'react-render';
 
 render(
