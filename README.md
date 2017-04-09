@@ -3,7 +3,7 @@ React Theme for Symfony FormView
 
 ## How to use ?
 
-## Controller Symfony:
+### Controller Symfony:
 ```php
 class ThisController extends Controller {
     public function thisAction(Request $request) {
@@ -17,7 +17,7 @@ class ThisController extends Controller {
 }
 ```
 
-## TWIG:
+### TWIG:
 ```html
 <div id="root"></div>
 <script type="text/javascript">
@@ -26,7 +26,7 @@ class ThisController extends Controller {
 <script type="text/javascript" src="this.js"></script>
 ```
 
-## Javascript:
+### Javascript:
 ```javascript
 'use strict';
 
