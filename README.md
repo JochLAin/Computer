@@ -27,11 +27,14 @@ class ThisController extends Controller {
 ```
 
 ### Javascript:
+
+`npm i -S jochlain/react-symfony-formview`
+
 ```javascript
 'use strict';
 
 import React from 'react';
-import Formulaire from 'app/index.jsx';
+import Formulaire from 'react-symfony-form-view';
 import { render } from 'react-render';
 
 render(
