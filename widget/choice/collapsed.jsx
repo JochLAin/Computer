@@ -43,26 +43,41 @@ import Label from '@components/form/label';
 import WidgetAttributes from '@components/form/attributes/widget';
 import Widget from '@components/form/widget';
 
-export default class Expanded extends Component {
+const O2A = (object) => {
+    if (!object) return [];
+    if (object instanceof Array) return object;
+
+    let array = [];
+    for (let key in object) array.push(object[key]);
+    return array;
+};
+
+export default class Collapsed extends Component {
     render() {
         const { choices, multiple, placeholder, preferred_choices, placeholder_in_choices, separator, value } = this.props.vars;
         let { required } = this.props.vars;
         const { size } = this.props.vars.attr;
-        const _option = choice => <option key={uuid.v4()} value={choice.value} {...Attributes.call(this.props,  choice.attr)}>{choice.label}</option> 
-        const _group = choice => choice.length == undefined ? _option(choice) : 
-            <optgroup key={uuid.v4()}>{choice.map(preference => _option(preference))}</optgroup>
+        const _group = choice => {
+            if (choice.length == undefined) return _option(choice);
+            return <optgroup key={uuid.v4()}>{choice.map(preference => _option(preference))}</optgroup>
+        }
+        const _option = choice => {
+            return <option key={uuid.v4()} value={choice.value} {...Attributes.call(this.props,  choice.attr)}>
+                {choice.label}
+            </option> 
+        }
 
         if (required && !placeholder && !placeholder_in_choices && !multiple && (!size || size <= 1)) required = false;
 
-        return <select {...WidgetAttributes.call(this.props)} multiple={multiple} defaultValue={value}>
+        return <select {...WidgetAttributes.call(this.props, { required })} multiple={multiple} defaultValue={value}>
             { placeholder && (
                 <option value="">{placeholder}</option>
             )}
-            { preferred_choices.length > 0 && preferred_choices.map(_group)}
+            { O2A(preferred_choices).map(_group)}
             { preferred_choices.length > 0 && separator && (
                 <option disabled={true}>{separator}</option>
             )}
-            { choices.length > 0 && choices.map(_group)}
+            { O2A(choices).map(_group)}
         </select>
     }
 }

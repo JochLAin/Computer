@@ -42,10 +42,8 @@ import Url from '@components/form/widget/input/url';
 
 export default class Widget extends Component {
     render() {
-        console.log(set.call(this));
         if (this.props.vars.compound) return <Compound {...this.props} />
         const prefixes = this.props.vars.block_prefixes;
-        console.log(prefixes);
         switch (prefixes[1]) {
             case 'checkbox':
                 switch (prefixes[2]) {
