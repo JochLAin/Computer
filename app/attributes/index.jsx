@@ -18,7 +18,7 @@
 export function get() {
     let attr = {};
     if (!this.vars) return attr; 
-    Object.keys(this.vars.attr).map((key, index, attributs) => {
+    Object.keys(this.vars.attr).map((key, index, attributes) => {
         if (["placeholder", "title"].indexOf(key) != -1) {
             // TODO: translate with StoneJS
             attr[key] = attributes[key];
@@ -26,10 +26,10 @@ export function get() {
             if (key == "class") attr.className = attributes.class;
             else if (key == "for") attr.htmlFor = attributes.for;
             else if (key == "value") attr.defaultValue = attributes.value;
-        } else if (attributs[key] === true) {
+        } else if (attributes[key] === true) {
             attr[key] = key;
-        } else if (attributs[key]) {
-            attr[key] = attributs[key];
+        } else if (attributes[key]) {
+            attr[key] = attributes[key];
         }
     });
     return attr;
