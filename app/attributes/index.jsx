@@ -44,5 +44,5 @@ export function set(attr) {
 }
 
 export default function attributes(attr) {
-    return Object.assign({}, get.call(this), attr);
+    return get.call(set.call(this, attr));
 }
