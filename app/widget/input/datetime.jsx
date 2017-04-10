@@ -18,7 +18,7 @@ import React, { Component } from 'react';
  */
 
 import ContainerAttributes from '../../attributes/container';
-import Input from 'inde';
+import Input from './index';
 import Widget from '../index';
 
 export default class DateTime extends Component {

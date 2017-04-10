@@ -11,8 +11,8 @@ import React, { Component } from 'react';
 {%- endblock collection_widget -%}
  */
 
-import { set } from './attributes';
-import Widget from './widget';
+import { set } from '../attributes';
+import Widget from './index';
 
 export default class Collection extends Component {
     render() {

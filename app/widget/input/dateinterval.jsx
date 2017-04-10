@@ -27,7 +27,7 @@ import Input from './index';
 import Label from '../../label';
 import Widget from '../index';
 
-import ContainerAttributes from '../attributes/container';
+import ContainerAttributes from '../../attributes/container';
 
 export default class DateInterval extends Component {
     render() {

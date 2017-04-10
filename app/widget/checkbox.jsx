@@ -8,7 +8,7 @@ import React, { Component } from 'react';
 {%- endblock checkbox_widget -%}
  */
 
-import WidgetAttributes from './attributes';
+import WidgetAttributes from '../attributes';
 
 export default class Checkbox extends Component {
     render() {

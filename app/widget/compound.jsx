@@ -14,9 +14,9 @@ import React, { Component } from 'react';
 {%- endblock form_widget_compound -%}
  */
 
-import Errors from './errors';
-import Rows from './rows';
-import ContainerAttributes from './attributes/container';
+import Errors from '../errors';
+import Rows from '../rows';
+import ContainerAttributes from '../attributes/container';
 
 export default class Widget extends Component {
     render() {
