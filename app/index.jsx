@@ -47,10 +47,11 @@ export default class Form extends Component {
     }
 }
 
-export { default as Attributes } from './attributes';
+export { default as Attributes, set as setAttr, get as getAttr } from './attributes';
 export { default as ButtonAttributes } from './attributes/button';
 export { default as ContainerAttributes } from './attributes/container';
 export { default as WidgetAttributes } from './attributes/widget';
+export { set as setVars } from './variables';
 
 export { default as Label } from './label';
 export { default as ButtonLabel } from './label/button';

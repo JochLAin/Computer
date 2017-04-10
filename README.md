@@ -1,5 +1,4 @@
-# Computer
-React Theme for Symfony FormView
+# React Theme for Symfony FormView
 
 ## How to use ?
 
