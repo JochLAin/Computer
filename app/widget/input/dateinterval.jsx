@@ -23,7 +23,7 @@ import React, { Component } from 'react';
  */
 
 import Errors from '../../errors';
-import Input from 'index';
+import Input from './index';
 import Label from '../../label';
 import Widget from '../index';
 

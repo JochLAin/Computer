@@ -15,7 +15,7 @@ import React, { Component } from 'react';
 {%- endblock time_widget -%}
  */
 
-import Input from 'index';
+import Input from './index';
 import Widget from '../index';
 import { set } from '../../attributes';
 import ContainerAttributes from '../../attributes/container';

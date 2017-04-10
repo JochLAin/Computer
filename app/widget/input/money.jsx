@@ -8,7 +8,7 @@ import React, { Component } from 'react';
 {%- endblock money_widget -%}
  */
 
-import Input from 'index';
+import Input from './index';
 
 export default class Money extends Component {
     render() {

@@ -16,7 +16,7 @@
 {%- endblock widget_container_attributes -%}
  */
 
-import attributes from 'index';
+import attributes from './index';
 
 export default function container_attributes(attr) {
     const { id } = this.vars;

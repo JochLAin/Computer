@@ -18,7 +18,7 @@
 {%- endblock widget_attributes -%}
  */
 
-import attributes from 'index';
+import attributes from './index';
 
 export default function widget_attributes(attr) {
     const { disabled, id, full_name, required } = this.vars;

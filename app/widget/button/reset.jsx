@@ -10,7 +10,7 @@ import React, { Component } from 'react';
  */
 
 import { set } from '../../variables';
-import Button from 'index';
+import Button from './index';
 
 export default class Reset extends Component {
     render() {

@@ -9,7 +9,7 @@ import React, { Component } from 'react';
  */
 
 import { set } from '../../variables';
-import Input from 'index';
+import Input from './index';
 
 export default class Url extends Component {
     render() {

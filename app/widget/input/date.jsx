@@ -18,7 +18,7 @@ import React, { Component } from 'react';
 {%- endblock date_widget -%}
  */
 
-import Input from 'index';
+import Input from './index';
 import Widget from '../index';
 import ContainerAttributes from '../../attributes/container';
 
