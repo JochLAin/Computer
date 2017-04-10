@@ -7,7 +7,7 @@ import React, { Component } from 'react';
     <input type="radio" {{ block('widget_attributes') }}{% if value is defined %} value="{{ value }}"{% endif %}{% if checked %} checked="checked"{% endif %} />
 {%- endblock radio_widget -%}
  */
-import WidgetAttributes from '../attributes';
+import WidgetAttributes from '../attributes/widget';
 
 export default class Checkbox extends Component {
     render() {
