@@ -55,15 +55,13 @@ export { set as setVars } from './variables';
 
 export { default as Label } from './label';
 export { default as ButtonLabel } from './label/button';
+
+export { default as Row } from './row';
 export { default as ButtonRow } from './row/button';
 export { default as HiddenRow } from './row/hidden';
-export { default as RepeatedRow } from './row/repeated';
-export { default as Rest } from './rest';
-export { default as Row } from './row';
-export { default as Rows } from './rows';
-export { default as Errors } from './errors';
-export { default as Widget } from './widget';
+export { default as Repeated } from './row/repeated';
 
+export { default as Widget } from './widget';
 export { default as Checkbox } from './widget/checkbox';
 export { default as Choice } from './widget/choice';
 export { default as Collapsed } from './widget/choice/collapsed';
@@ -85,10 +83,13 @@ export { default as Password } from './widget/input/password';
 export { default as Percent } from './widget/input/percent';
 export { default as Radio } from './widget/radio';
 export { default as Range } from './widget/input/range';
-export { default as Repeated } from '../widget/row/repeated';
 export { default as Reset } from './widget/button/reset';
 export { default as Search } from './widget/input/search';
 export { default as Submit } from './widget/button/submit';
 export { default as Textarea } from './widget/textarea';
 export { default as Time } from './widget/input/time';
 export { default as Url } from './widget/input/url';
+
+export { default as Errors } from './errors';
+export { default as Rows } from './rows';
+export { default as Rest } from './rest';
