@@ -18,20 +18,21 @@
 export function get() {
     let attr = {};
     if (!this.vars) return attr; 
-    Object.keys(this.vars.attr).map((key, index, attributes) => {
+    Object.keys(this.vars.attr).map((key, index, keys) => {
+        if (!this.vars.attr[key]) return;
         if (["placeholder", "title"].indexOf(key) != -1) {
             // TODO: translate with StoneJS
-            attr[key] = attributes[key];
-        } else if (["class", "for", "value"].indexOf(key) != -1) {
-            if (key == "class") attr.className = attributes.class;
-            else if (key == "for") attr.htmlFor = attributes.for;
-            else if (key == "value") attr.defaultValue = attributes.value;
-        } else if (attributes[key] === true) {
+            attr[key] = this.vars.attr[key];
+        } else if (["class", "datas", "for", "value"].indexOf(key) != -1) {
+            if (key == "class") attr.className = this.vars.attr.class;
+            else if (key == "for") attr.htmlFor = this.vars.attr.for;
+            else if (key == "value") attr.defaultValue = this.vars.attr.value;
+        } else if (this.vars.attr[key] === true) {
             attr[key] = key;
-        } else if (attributes[key]) {
-            attr[key] = attributes[key];
+        } else if (this.vars.attr[key]) {
+            attr[key] = this.vars.attr[key];
         }
-    });
+    }).filter(item => item);
     return attr;
 };
 
