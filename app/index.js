@@ -1,9 +1,9 @@
 'use strict';
 
 import Form from './components/form';
-import { set as setWidget } from './widget';
-import { set as setLabel } from './label';
-import { set as setRow } from './row';
+import { set as setWidgets } from './widget';
+import { set as setLabels } from './label';
+import { set as setRows } from './row';
 
 export default Form;
 export const set = (fields) => {
