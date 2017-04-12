@@ -4,7 +4,11 @@ import React from 'react';
 import { render } from 'react-dom';
 import Form from '../app';
 
-render(
-    <Form {...window.__initialState__} />,
-    document.getElementById('root')
-);
+fetch('http://jochlain.local/form/')
+.then(response => response.json())
+.then(form => {
+    render(
+        <div className="container"><Form {...form} /></div>,
+        document.getElementById('root')
+    );
+})

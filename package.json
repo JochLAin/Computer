@@ -1,8 +1,8 @@
 {
   "name": "react-symfony-formview",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "React Theme for Symfony FormView",
-  "main": "app/index.jsx",
+  "main": "app/index.js",
   "scripts": {
     "dev": "webpack -d --watch",
     "prod": "NODE_ENV=production webpack -p",
