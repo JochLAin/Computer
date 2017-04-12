@@ -34,8 +34,6 @@ export default class DateInterval extends Component {
             return <Input {...this.props} />
         }
 
-        console.log("date interval", this.props);
-
         return <article {...ContainerAttributes.call(this.props)}>
                 <Errors {...this.props} />
                 <table className={this.props.vars.table_class}>

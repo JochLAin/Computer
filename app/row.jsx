@@ -12,7 +12,6 @@ let rows = {
 export default class Row extends Component {
     render() {
         const Field = get(getType.call(this.props));
-        console.log(getType.call(this.props));
         return <Field {...this.props} />
     }
 }

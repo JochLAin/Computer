@@ -59,6 +59,6 @@ export { default as Errors } from './errors';
 export { default as Rows } from './components/rows';
 export { default as Rest } from './components/rest';
 
-export { default as Label, get as getLabels, set as setLabels } from './label';
-export { default as Row, get as getRows, set as setRows } from './row';
-export { default as Widget, get as getWidgets, set as setWidgets } from './widget';
+export { default as Label, get as getLabel, set as setLabels } from './label';
+export { default as Row, get as getRow, set as setRows } from './row';
+export { default as Widget, get as getWidget, set as setWidgets } from './widget';
