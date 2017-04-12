@@ -1,8 +1,11 @@
 'use strict';
 
 import Form from './components/form';
-export default Form;
+import { set as setWidget } from './widget';
+import { set as setLabel } from './label';
+import { set as setRow } from './row';
 
+export default Form;
 export const set = (fields) => {
     if (!fields) return;
 
@@ -52,9 +55,9 @@ export { default as Time } from './components/widget/input/time';
 export { default as Url } from './components/widget/input/url';
 
 export { default as Errors } from './errors';
-export { default as Row } from './row';
 export { default as Rows } from './components/rows';
 export { default as Rest } from './components/rest';
 
-export { default as Widget } from './widget';
-export { default as Label } from './label';
+export { default as Label, get as getLabels, set as setLabels } from './label';
+export { default as Row, get as getRows, set as setRows } from './row';
+export { default as Widget, get as getWidgets, set as setWidgets } from './widget';
