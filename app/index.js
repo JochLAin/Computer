@@ -20,6 +20,7 @@ export { default as ContainerAttributes } from './utils/attributes/container';
 export { default as WidgetAttributes } from './utils/attributes/widget';
 export { set as setVars } from './utils/variables';
 
+export { default as BaseLabel } from './components/label';
 export { default as ButtonLabel } from './components/label/button';
 
 export { default as ButtonRow } from './components/row/button';
