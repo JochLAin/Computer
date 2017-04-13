@@ -14,7 +14,7 @@ export const set = (fields) => {
     if (fields.widgets) setWidgets(fields.widgets);
 };
 
-export { Attributes, set as setAttr, get as getAttr } from './utils/attributes';
+export { default as Attributes, set as setAttr, get as getAttr } from './utils/attributes';
 export { default as ButtonAttributes } from './utils/attributes/button';
 export { default as ContainerAttributes } from './utils/attributes/container';
 export { default as WidgetAttributes } from './utils/attributes/widget';
