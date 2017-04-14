@@ -21,6 +21,6 @@
 import attributes from './index';
 
 export default function widget_attributes(attr) {
-    const { disabled, id, full_name, required } = this.vars;
-    return Object.assign({}, { disabled, id, name: full_name, required }, attributes.call(this, attr));
+    const { disabled, id, full_name, required, value } = this.vars;
+    return Object.assign({}, { defaultValue: value, disabled, id, name: full_name, required }, attributes.call(this, attr));
 }
