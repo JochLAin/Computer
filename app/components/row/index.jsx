@@ -19,8 +19,8 @@ import Widget from '../../widget';
 export default class Row extends Component {
     render() {
         return <div>
-            <Errors {...this.props}/>
-            <Label {...this.props}/>
+            { this.props.vars.errors.length && <Errors {...this.props}/>}
+            { this.props.vars.label && <Label {...this.props}/>}
             <Widget {...this.props}/>
         </div>
     }

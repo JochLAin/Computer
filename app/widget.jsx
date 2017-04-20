@@ -39,9 +39,12 @@ let widgets = {
 
 export default class Widget extends Component {
     render() {
-        const Field = get(getType.call(this.props));
+        const Field = get(getType.call(this.props), this.props.vars.compound);
         return <Field {...this.props} />
     }
 }
+
 export const set = _widgets => { widgets = Object.assign({}, widgets, _widgets); };
-export const get = name => widgets[name] ? widgets[name] : widgets.button;
+export const get = (name, compound) => widgets[name] ? widgets[name] : (
+    compound ? widgets.compound : widgets.button
+);

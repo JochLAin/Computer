@@ -42,7 +42,9 @@ export default class Form extends Component {
             { form_method != method && (
                 <input type="hidden" name="_method" value={method} />
             )}
-            <Rest {...this.props} rendered={this.state.rendered} />
+            { (this.props.vars.render_rest === undefined || this.props.vars.render_rest) ? (
+                <Rest {...this.props} rendered={this.state.rendered} />
+            ) : this.props.children}
         </form>
     }
 }

@@ -18,7 +18,7 @@ export { default as Attributes, set as setAttr, get as getAttr } from './utils/a
 export { default as ButtonAttributes } from './utils/attributes/button';
 export { default as ContainerAttributes } from './utils/attributes/container';
 export { default as WidgetAttributes } from './utils/attributes/widget';
-export { set as setVars } from './utils/variables';
+export { set as setVars, getType } from './utils/variables';
 
 export { default as BaseLabel } from './components/label';
 export { default as ButtonLabel } from './components/label/button';

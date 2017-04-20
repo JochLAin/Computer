@@ -6,7 +6,9 @@ import { getType } from './utils/variables';
 let rows = {
     button: require('./components/row/button').default,
     default: require('./components/row').default,
-    hidden: require('./components/row/hidden').default
+    hidden: require('./components/row/hidden').default,
+    reset: require('./components/row/button').default,
+    submit: require('./components/row/button').default,
 };
 
 export default class Row extends Component {
